@@ -67,8 +67,6 @@ const corsOptions = {
   credentials: true,     // Allow credentials (cookies)
 };
 
-const app = express();
-
 // Middlewares
 app.use(cors(corsOptions)); // CORS middleware must be used before any routes
 app.use(express.json({ limit: '10mb' })); // Increase JSON body size

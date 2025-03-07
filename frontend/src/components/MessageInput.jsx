@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import axios from 'axios'
 import {useDispatch, useSelector} from 'react-redux';
 import { setMessages } from '../redux/messageSlice';
-import { BACKEND_URL } from "../assets/config";
+import { BACKEND_URL } from "../assets/config.jsx";
 
 
 const MessageInput = () => {
