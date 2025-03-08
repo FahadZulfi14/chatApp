@@ -106,7 +106,7 @@ function App() {
       const socket = io(`${BACKEND_URL}`, {
         query: { userId: authUser._id },
       });
-      console.log(BACKEND_URL)
+      
 
       dispatch(setSocket(socket));
 

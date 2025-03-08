@@ -4,7 +4,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 import { setAuthUser } from '../redux/userSlice';
-import { BACKEND_URL } from '../assets/config';
+import { BACKEND_URL } from '../assets/config.jsx';
 
 
 
