@@ -262,7 +262,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import { BACKEND_URL } from '../assets/config';
+import { BACKEND_URL } from '../assets/config.jsx';
 
 const Register = () => {
   const [step, setStep] = useState(1);

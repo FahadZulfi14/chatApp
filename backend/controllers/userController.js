@@ -6,6 +6,12 @@ import { uploadImageOnCloudinary } from '../helper/cloudinaryHelper.js';
 import { upload } from '../middleware/multerMiddleWare.js';
 import jwt from 'jsonwebtoken';
 import isAuthorized from '../middleware/authMiddleWare.js';
+import dotenv from 'dotenv';
+
+
+
+dotenv.config({});
+
 
 const router = express.Router();
 
