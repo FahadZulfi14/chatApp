@@ -31,6 +31,7 @@ const Signin = () => {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer YOUR_JWT_TOKEN',
+          
         },
         withCredentials: true,
       });

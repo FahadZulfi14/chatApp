@@ -8,6 +8,7 @@ import {app, server} from './socket/socket.js';
 import dotenv from 'dotenv';
 
 
+
 dotenv.config({});
 
 
@@ -17,15 +18,15 @@ const Port = process.env.PORT || 9000;
 
 
 
-app.use(express.json({ limit: '10mb' })); // Increase JSON body size
-app.use(express.urlencoded({ limit: '10mb', extended: true })); // Increase form data size
- 
+app.use(express.json({ limit: '100mb' })); // Increase JSON body size
+app.use(express.urlencoded({ limit: '100mb', extended: true })); // Increase form data size
+const frontendUrl = process.env.FRONTEND_URL
 
 const corsOptions = {
-origin: process.env.FRONTEND_URL,
+origin: frontendUrl,
 credentials : true,  //ye cookie ko allow karta hai// 
 };
-
+console.log("frontendUrl",frontendUrl)
 app.use(cors(corsOptions))
 
 app.use(express.json());

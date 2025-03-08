@@ -14,7 +14,7 @@ const useGetOtherUsers = () => {
             axios.defaults.withCredentials = true;
             const res = await axios.get(`${BACKEND_URL}/api/user`);
             dispatch(setOtherUsers(res.data))
-            // console.log(res.data)
+            console.log("railway back url", BACKEND_URL)
         } catch (error) {
              console.log("can't provide users, Login first ", error)
             
