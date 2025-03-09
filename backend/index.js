@@ -23,7 +23,7 @@ app.use(express.urlencoded({ limit: '100mb', extended: true })); // Increase for
 const frontendUrl = process.env.FRONTEND_URL
 
 const corsOptions = {
-origin: 'https://chatapp-alpha-lilac.vercel.app',
+origin: '*',
 credentials : true,  //ye cookie ko allow karta hai// 
 };
 console.log("frontendUrl",frontendUrl)
