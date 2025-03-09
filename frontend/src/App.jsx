@@ -104,8 +104,7 @@ function App() {
   useEffect(() => {
     if (authUser) {
       const socket = io(`${BACKEND_URL}`, {
-        auth: { userId: authUser._id },
-        // query: { userId: authUser._id },
+        query: { userId: authUser._id },
       });
       
 

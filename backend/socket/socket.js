@@ -62,7 +62,7 @@ dotenv.config({});
 const server = http.createServer(app);
 const io = new Server(server, {
     cors:{
-        origin:['https://chatapp-alpha-lilac.vercel.app'],
+        // origin:['https://chatapp-alpha-lilac.vercel.app'],
         origin:'https://chatapp-alpha-lilac.vercel.app',
         // origin:[process.env.FRONTEND_URL],
         credentials : true,

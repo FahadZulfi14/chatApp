@@ -25,6 +25,7 @@ const frontendUrl = process.env.FRONTEND_URL
 const corsOptions = {
 origin: 'https://chatapp-alpha-lilac.vercel.app',
 credentials : true,  //ye cookie ko allow karta hai// 
+methods:['GET', 'POST'],
 };
 console.log("frontendUrl",frontendUrl)
 app.use(cors(corsOptions))
