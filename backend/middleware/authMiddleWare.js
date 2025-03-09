@@ -1,4 +1,9 @@
 import  jwt  from "jsonwebtoken";
+import dotenv from 'dotenv';
+
+
+
+dotenv.config({});
 
 
 const isAuthorized = async (req,res,next)=>{
