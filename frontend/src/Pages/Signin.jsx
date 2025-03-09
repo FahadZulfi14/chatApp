@@ -51,8 +51,8 @@ const Signin = () => {
       toast.success(`Welcome ${res.data.name}, Login successfully!`);
       dispach(setAuthUser(res.data))
     } catch (error) {
-      toast.error(error.message);
-      console.log(error);
+      toast.error(res.response.data.message);
+      console.log(error.message);
     }
 
   };

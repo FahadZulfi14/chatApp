@@ -103,7 +103,8 @@ function App() {
 
   useEffect(() => {
     if (authUser) {
-      const socket = io(`${BACKEND_URL}`, {
+      // const socket = io(`${BACKEND_URL}`, {
+        const socket = io('https://kind-manifestation-production.up.railway.app', {
         query: { userId: authUser._id },
       });
       
